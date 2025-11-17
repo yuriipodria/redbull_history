@@ -1,9 +1,16 @@
 import FirstSlide from "./components/FirstSlide";
+import SecondSlide from "./components/SecondSlide";
 import "./index.css";
 
 function App() {
   return (
-    <FirstSlide />
+    <>
+      <div className="relative h-screen w-full overflow-hidden">
+        <FirstSlide />
+
+        <SecondSlide />
+      </div>
+    </>
   );
 }
 

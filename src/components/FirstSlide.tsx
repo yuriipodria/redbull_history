@@ -1,25 +1,23 @@
 import logo from "../assets/logo.svg";
-import logotext from "../assets/logotext.svg";
+import logoText from "../assets/logo-text.svg";
 import burger from "../assets/burger.svg";
-import firstslide from "../assets/firstslide.png";
+import firstSlide from "../assets/first-slide.png";
 import darker from "../assets/darker.png";
 import { motion } from "framer-motion";
 
 const FirstSlide = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <>
       <div className="absolute -z-30 h-full w-full bg-neutral-800"></div>
 
       <motion.img
-        src={firstslide}
+        src={firstSlide}
         alt="background"
         className="absolute -z-20 h-full w-full object-cover object-center"
         initial={{
-          translateY: "100%",
           opacity: 0,
         }}
         animate={{
-          translateY: "0%",
           opacity: 1,
         }}
         transition={{
@@ -35,10 +33,10 @@ const FirstSlide = () => {
         className="absolute -z-10 h-full w-full object-center"
       />
 
-      <div className="flex h-full flex-col justify-between px-20 py-16">
+      <div className="flex h-full flex-col justify-between px-20 py-20">
         <div className="flex items-center justify-between">
           <motion.img
-            src={logotext}
+            src={logoText}
             alt="logotext"
             className="h-6"
             initial={{
@@ -66,7 +64,7 @@ const FirstSlide = () => {
               translateY: "-50%",
             }}
             animate={{
-              width: "8rem",
+              width: "6rem",
               top: "4rem",
               translateY: "0%",
             }}
@@ -137,7 +135,7 @@ const FirstSlide = () => {
           </motion.p>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
